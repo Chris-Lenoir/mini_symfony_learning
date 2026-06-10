@@ -33,6 +33,33 @@ public/
 
 ---
 
+## Module 1 - Front Controller et Router 
+
+- Comprendre le rôle du Front Controller
+- Utiliser $_SERVER['REQUEST_URI']
+- Créer une classe router
+- Créer un objet avec new
+- Utiliser une méthode de classe
+- Créer des routes avec switch
+- Comprendre le cycle d'une requête web 
+
+### Cycle d'une requête 
+
+        Utilisateur
+            ↓
+        Navigateur
+            ↓
+        Apache
+            ↓
+        public/index.php
+            ↓
+        Router
+            ↓
+        Page affichée
+
+
+---
+
 ## Auteur
 
 Christophe Lenoir
