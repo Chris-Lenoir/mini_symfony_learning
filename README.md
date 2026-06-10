@@ -33,6 +33,53 @@ public/
 
 ---
 
+## Glossaire - Mini Symfony Learning
+
+MVC => Architecture séparant les responsabilités d'une application. 
+
+Model => Comunique avec la base de données.
+
+View => Affiche le HTML. 
+
+Controller => Coordonne les traitements.
+
+Front Controller => Point d'entrée unique de l'application .
+            Dans notre projet : public/index.php ---> Toutes les requêtes passent par lui 
+
+Router => Composant chargé d'analyser l'URL et de choisir quel Controller doit être exécuté.
+            Exemple : /contact -> ContactController
+
+Classe => Plan de fabrication d'un objet.
+            Exemple : class router {}
+
+Objet => Instance créee à partir d'une classe.
+            Exemple : $router = new router();
+
+Variable => Conteneur permettant de stocker une valeur.
+            Exemple : $url = "/contact"; ou $router = new Router();
+
+Méthode => Fonction appartenant à une classe. 
+            Exemple : $router->dispatch($url); 
+                La méthode est dispatch()
+
+$_SERVER => Supergloblale PHP contenant des informations sur la requête et le serveur.
+
+REQUEST_URI => Valeur contenue dans : $_SERVER['REQUEST_URI]
+        Permet de récupérer l'URL demandée par l'utilisateur.
+            Exemple : /contact
+
+REQUIRE_ONNCE '../core/Router.php';
+
+---
+
+## Questions Fréquentes
+
+
+
+
+
+---
+
 ## Module 1 - Front Controller et Router 
 
 - Comprendre le rôle du Front Controller

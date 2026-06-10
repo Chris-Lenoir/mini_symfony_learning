@@ -1,5 +1,5 @@
 <?php 
-
+// Le travail du router est de recevoir l'URL et là il choisit le controler
 class router {
     public function dispatch(string $url): void 
     {
