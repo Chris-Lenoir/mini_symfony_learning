@@ -74,7 +74,7 @@ REQUIRE_ONNCE '../core/Router.php';
 
 ## Questions Fréquentes
 
-    Responsabilité MVC
+## Responsabilité MVC
 
 ### Router 
         Analyse l'URL et choisit le Controller à exécuter.
