@@ -74,8 +74,20 @@ REQUIRE_ONNCE '../core/Router.php';
 
 ## Questions Fréquentes
 
+    Responsabilité MVC
 
+### Router 
+        Analyse l'URL et choisit le Controller à exécuter.
+            exemple: /contact ->ContactController
 
+### Controler
+        Traite la demande, prépare les données et appelle la view. Il ne doit pas contenir le HTML de la page
+
+### Model
+        Commmunique avec la base de données. Il récpuère, ajoute, modifie ou supprime les données.
+
+### View Contient le HTML affiché à l'utilisateur.
+        Elle ne doit pas gérer la logique métier ni accéder directement à la base de données.
 
 
 ---
@@ -90,19 +102,44 @@ REQUIRE_ONNCE '../core/Router.php';
 - Créer des routes avec switch
 - Comprendre le cycle d'une requête web 
 
-### Cycle d'une requête 
+    ## Schémas importants
+    
+    ### Cycle d'une requête
 
-        Utilisateur
-            ↓
-        Navigateur
-            ↓
-        Apache
-            ↓
-        public/index.php
-            ↓
-        Router
-            ↓
-        Page affichée
+            Utilisateur
+                ↓
+            Navigateur
+                ↓
+            Apache
+                ↓
+            public/index.php
+                ↓
+            Router
+                ↓
+            Controller
+                ↓
+            Model
+                ↓
+            View
+                ↓
+            HTML
+                ↓
+            Navigateur
+
+
+    ### Architecture MVC 
+
+            Model
+                ↓
+            Accès aux données
+
+            Controller
+                ↓
+            Traitement de la demande
+                ↓
+            View
+                ↓
+            Affichage HTML
 
 
 ---
