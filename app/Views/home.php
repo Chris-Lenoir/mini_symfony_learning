@@ -1,3 +1,12 @@
-<h1>Accueil</h1>
+<h1><?= $title ?></h1>
 
-<p>Bienvenue sur Mini Symfony Learning</p>
+<p> <?= $description ?></p>
+
+<p> <?= $year ?> </p>
+
+<ul>
+    <?php foreach ($products as $product) { ?>
+        <li><?= $product ?></li>
+
+    <?php } ?>
+</ul>

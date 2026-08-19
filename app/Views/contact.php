@@ -1,3 +1,1 @@
-<h1>Contact</h1>
-
-<p>Bienvenue sur la page contact.</p>
+<h1><?= $title ?></h1>
