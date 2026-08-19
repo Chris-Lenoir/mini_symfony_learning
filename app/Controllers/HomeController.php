@@ -5,11 +5,10 @@ class HomeController{
         $title = 'Accueil';
         $description = 'Bienvenue sur Mini Symfony Learning'; 
         $year = 2026;
-        $products = [
-            'Clavier',
-            'Souris',
-            'Écran',
-        ];
+
+        $productModel = new ProductModel();
+        $products = $productModel->findAll();
+        
         require_once __DIR__ . '/../Views/home.php';
     }
 }

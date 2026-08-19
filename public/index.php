@@ -3,6 +3,7 @@
 require_once '../core/router.php'; 
 require_once '../app/Controllers/HomeController.php';
 require_once '../app/Controllers/ContactController.php';
+require_once '../app/Models/ProductModel.php';
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
