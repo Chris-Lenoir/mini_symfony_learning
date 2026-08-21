@@ -50,7 +50,7 @@ Router => Composant chargé d'analyser l'URL et de choisir quel Controller doit 
             Exemple : /contact -> ContactController
 
 Classe => Plan de fabrication d'un objet.
-            Exemple : class router {}
+            Exemple : class Router {}
 
 Objet => Instance créee à partir d'une classe.
             Exemple : $router = new router();
@@ -70,6 +70,77 @@ REQUEST_URI => Valeur contenue dans : $_SERVER['REQUEST_URI]
 
 REQUIRE_ONNCE '../core/Router.php';
 
+
+Classe => Modèle ou plan permettant de créer des objets. Une classe peut contenir des propriétés et des méthodes.
+
+            Exemple :
+
+            class Router
+            {
+                public function dispatch($url)
+                {
+                }
+            }
+
+            Ici, Router est la classe.
+
+
+Objet => Instance concrète créée à partir d'une classe.
+
+            Exemple :
+
+            $router = new Router();
+
+            Ici, $router est un objet de la classe Router.
+
+
+Instanciation => Action de créer un objet à partir d'une classe grâce au mot-clé new.
+
+            Exemple :
+
+            $router = new Router();
+
+            Router = la classe
+            new Router() = l'instanciation
+            $router = l'objet créé
+
+
+Méthode => Fonction déclarée à l'intérieur d'une classe. Elle représente une action que l'objet peut effectuer.
+
+            Exemple :
+
+            class Router
+            {
+                public function dispatch($url)
+                {
+                }
+            }
+
+            Ici, dispatch() est une méthode.
+
+            Pour l'utiliser :
+
+            $router->dispatch($url);
+
+
+Héritage => Mécanisme permettant à une classe de récupérer les propriétés et méthodes d'une autre classe.
+
+            L'héritage utilise le mot-clé extends.
+
+            Exemple :
+
+            class Controller
+            {
+                public function render()
+                {
+                }
+            }
+
+            class HomeController extends Controller
+            {
+            }
+
+            Ici, HomeController hérite de Controller.
 ---
 
 ## Questions Fréquentes

@@ -4,9 +4,3 @@
 
 <p> <?= $year ?> </p>
 
-<ul>
-    <?php foreach ($products as $product) { ?>
-        <li><?= $product ?></li>
-
-    <?php } ?>
-</ul>
